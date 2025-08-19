@@ -1,0 +1,133 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #222;
+}
+
+p {
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+/* Tool grid */
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Tool cards */
+.tool-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #2c3e50;
+  transition: all 0.3s ease;
+  gap: 0.75rem;
+}
+
+.tool-card i {
+  width: 32px;
+  height: 32px;
+  stroke-width: 2.2;
+  color: #3498db;
+}
+
+.tool-card:hover {
+  background: #3498db;
+  color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.tool-card:hover i {
+  color: white;
+}
+
+/* Tool container for each page */
+.tool-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  text-align: center;
+}
+
+.tool-container input[type="file"],
+.tool-container button {
+  margin-top: 1rem;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.tool-container button {
+  background: #3498db;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+.tool-container button:hover {
+  background: #2980b9;
+}
+
+/* Back link */
+.back-link {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.back-link a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
